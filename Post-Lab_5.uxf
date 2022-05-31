@@ -1,0 +1,37 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;320&lt;/x&gt;&lt;y&gt;252&lt;/y&gt;&lt;w&gt;130&lt;/w&gt;&lt;h&gt;80&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=.&amp;gt;
+&amp;lt;&amp;lt;sends response&amp;gt;&amp;gt;&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;10;10;60&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;Space for diagram notes&lt;diagram program="umletino" version="14.4.0-SNAPSHOT"&gt;&lt;zoom_level&gt;10&lt;/zoom_level&gt;&lt;element&gt;&lt;id&gt;Relation&lt;/id&gt;&lt;coordinates&gt;&lt;x&gt;180&lt;/x&gt;&lt;y&gt;252&lt;/y&gt;&lt;w&gt;130&lt;/w&gt;&lt;h&gt;80&lt;/h&gt;&lt;/coordinates&gt;&lt;panel_attributes&gt;lt=.&amp;gt;
+&amp;lt;&amp;lt;Receives Reply&amp;gt;&amp;gt;&lt;/panel_attributes&gt;&lt;additional_attributes&gt;10;60;10;10&lt;/additional_attributes&gt;&lt;/element&gt;&lt;/diagram&gt;</help_text><element><id>UMLClass</id><coordinates><x>110</x><y>0</y><w>210</w><h>260</h></coordinates><panel_attributes>View
+--
+-class View:
+-__init__(self, d):
++self.doctor
++self.doctorLabel
++self.patientLabel
++self.patientField
++self.respondButton
++self.leaveButton
++self.newButton
+-respond(self):
++self.patientField.getText()
+-leave(self):
++self.doctor.signoff()
+-new(self):
++self.doctor.greeting()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>90</y><w>130</w><h>50</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;110;30</additional_attributes></element><element><id>UMLActor</id><coordinates><x>410</x><y>100</y><w>60</w><h>110</h></coordinates><panel_attributes>Patient</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>300</y><w>210</w><h>240</h></coordinates><panel_attributes>Doctor
+--
+class Doctor:
+-__init__(self):
++self.hedges
++self.qualifiers
++self.replacements
+-greeting(self):
++return str
+-signoff(self):
++return str
+-reply(self, sentence):
++probability = random.randint(1, 4)
+-changePerson(self, sentence):
++replyWords = []
++self.replacements.get(word, word)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>380</y><w>130</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>UMLActor</id><coordinates><x>410</x><y>380</y><w>60</w><h>110</h></coordinates><panel_attributes>Doctor</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>250</y><w>130</w><h>70</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;Receives Reply&gt;&gt;</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>250</y><w>130</w><h>70</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;sends response&gt;&gt;</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element></diagram>
